@@ -1,0 +1,15 @@
+<launch>
+  <!--打开节点dlrobot_robot，初始化串口等操作-->
+  <arg name="odom_frame_id"  default="odom_combined"/>
+  <node pkg="dlrobot_robot" type="dlrobot_robot_node" name="dlrobot_robot" output="screen" respawn="false">
+    <param name="usart_port_name"    type="string" value="/dev/ttyACM0"/>  
+    <param name="serial_baud_rate"   type="int"    value="115200"/>
+    <param name="odom_frame_id"      type="string" value="$(arg odom_frame_id)"/> 
+    <param name="robot_frame_id"     type="string" value="base_footprint"/> 
+    <param name="gyro_frame_id"      type="string" value="imu_link"/> 
+  </node>
+
+</launch>
+
+
+

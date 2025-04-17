@@ -1,0 +1,6 @@
+<launch>
+
+    <node pkg="livox_to_pointcloud2" type="livox_to_pointcloud2" name="livox_repub_node">
+    </node>
+
+</launch>

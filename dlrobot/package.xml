@@ -1,0 +1,31 @@
+<?xml version="1.0.0"?>
+<package>
+  <name>dlrobot</name>
+  <version>1.0.0</version>
+  <description>Two wheel differential drive ROS platform</description>
+  <maintainer email="642196413@qq.com">t</maintainer>
+  <license>BSD</license>
+
+   <author email="642196413@qq.com">duncan</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+    <build_depend>roscpp</build_depend>
+    <build_depend>rospy</build_depend>
+    <build_depend>tf</build_depend>
+    <build_depend>dl_msgs</build_depend>
+    <build_depend>sensor_msgs</build_depend>
+    <build_depend>geometry_msgs</build_depend>
+    <build_depend>std_msgs</build_depend>
+    
+    <run_depend>roscpp</run_depend>
+    <run_depend>rospy</run_depend>
+    <run_depend>rosserial_python</run_depend>
+    <run_depend>tf</run_depend>
+    <run_depend>nav_msgs</run_depend>
+    <run_depend>dl_msgs</run_depend>
+    <run_depend>sensor_msgs</run_depend>
+    <run_depend>geometry_msgs</run_depend>
+    <run_depend>std_msgs</run_depend>
+  <export>
+  </export>
+</package>

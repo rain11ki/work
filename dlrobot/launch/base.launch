@@ -1,0 +1,11 @@
+<launch>
+  <!--serial communication between arduino and pc via usb /-->
+  <node name="arduino_serial_node" pkg="rosserial_python" type="serial_node.py" output="screen">
+    <param name="port" value="/dev/ttyUSB0" />
+    <param name="baud" value="115200" />
+  </node>
+ 
+  <node pkg="dlrobot" name="dl_base_node" type="dl_base_node">
+    <param name="linear_scale" type="double" value="1.0" />
+  </node>
+</launch>
